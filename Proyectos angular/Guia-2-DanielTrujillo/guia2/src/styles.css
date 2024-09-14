@@ -11,14 +11,14 @@
     --colorh: #ff6600;
     --fuente: 'Nerko One', cursive;
     --fuente2: Arial, sans-serif; 
-    --color-fila-impar: #bec1c3;
+    --color-fila-impar: #045795;
     --color-fila-impar-texto: #000000;
-    --color-fila-par: #045795;
-    --color-fila-par-texto: #ffffff;
+    --color-fila-par:  #bec1c3;
+    --color-fila-par-texto: #000000;
     --tamano-fila: 1.5rem;
-    --color-header-fondo: #000000; /* Color de fondo del encabezado de la tabla */
-    --color-header-texto: #ffffff; /* Color de texto del encabezado de la tabla */
-    --tamano-header: 1.5rem; /* Tamaño de fuente del encabezado */
+    --color-header-fondo: #000000; 
+    --color-header-texto: #ffffff; 
+    --tamano-header: 1.5rem; 
     --link-font-weight: bold; /* Estilo de fuente en negrita para los enlaces */
     --link-text-decoration: none; /* Quitar subrayado de los enlaces */
 }
