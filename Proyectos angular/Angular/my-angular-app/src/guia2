@@ -1,0 +1,38 @@
+:root{
+    --variableparrafo : 2rem;
+    --color1: #7800ff;
+    --coloresfilas: #33e210;
+    --fuente: Nerko one;
+    --coloresdiv:#e21072; 
+    --anchodiv: 3000px;
+    --anchodiv2: 1000px;
+    --margendiv: auto;
+    --colordiv2: #11030a; 
+
+}
+html,body{
+    color: var(--color1);
+    font-size: var(--variableparrafo);
+}
+td{
+    color: var(--color1);
+    font-size: var(--variableparrafo);  
+    font-size : var(--fuente);
+    background-color:var(--coloresfilas);
+    font: var(--fuente);
+}
+div{
+    background-color: var(--coloresdiv);
+    width: var(--anchodiv);
+    margin: var(--margendiv);
+}
+.general{
+    background-color: var(--coloresdiv);
+    width: var(--anchodiv);
+    margin: var(--margendiv);
+}
+.subitem{
+    background-color: var(--colordiv2);
+    width: var(--anchodiv2);
+    margin: var(--margendiv);
+}

@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --variabletitulo: 2rem;
+    --variableparrafo: 1rem;
+    --variableparrafo2: 12px; 
+    --color1: #ff4900;
+    --color2: #0093FF;
+    --color3: #c500ff;
+    --colorlink: #001bff;
+    --colorv: #4CAF50;
+    --colorh: #ff6600;
+    --fuente: 'Nerko One', cursive;
+    --fuente2: Arial, sans-serif; 
+    --color-fila-impar: #bec1c3;
+    --color-fila-impar-texto: #000000;
+    --color-fila-par: #045795;
+    --color-fila-par-texto: #ffffff;
+    --tamano-fila: 1.5rem;
+    --color-header-fondo: #000000; /* Color de fondo del encabezado de la tabla */
+    --color-header-texto: #ffffff; /* Color de texto del encabezado de la tabla */
+    --tamano-header: 1.5rem; /* Tamaño de fuente del encabezado */
+    --link-font-weight: bold; /* Estilo de fuente en negrita para los enlaces */
+    --link-text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+html, body {
+    color: var(--color1);
+    font-size: var(--variableparrafo);
+}
+
+h2 {
+    font-size: var(--variabletitulo);
+    color: var(--color1);
+}
+
+p {
+    font-size: var(--variableparrafo);
+    color: var(--color2);
+    font-family: var(--fuente2);
+}
+
+p.uno {
+    font-size: var(--variableparrafo2);
+    color: var(--color3);
+    font-family: var(--fuente);
+}
+
+ul li a {
+    color: var(--colorlink);
+    font-weight: var(--link-font-weight);
+    text-decoration: var(--link-text-decoration);
+}
+
+a:visited {
+    color: var(--colorv);
+}
+
+a:hover {
+    color: var(--colorh);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: var(--color-header-fondo);
+    color: var(--color-header-texto);
+    font-size: var(--tamano-header);
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+    font-size: var(--tamano-fila);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--color-fila-impar);
+    color: var(--color-fila-impar-texto);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-fila-par);
+    color: var(--color-fila-par-texto);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    background-color: #1b0fcc56;
+    display: grid;
+    grid-template-rows: repeat(3);
+}
+
+.header {
+    background-color: #241c9e56;
+    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    width: auto;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+}
+.espacio{
+    margin-left: 10px;
+    background-color: #231c8d56;
+
+}
+
+.logo {
+    margin-left: 10px;
+    background-color: #18108656;
+    width: 100px;
+    height: 100px;
+    background-size: 160px;
+    background-position: center;
+    background-image: url("https://caracoltv.brightspotcdn.com/dims4/default/9111577/2147483647/strip/false/crop/1200x720+0+0/resize/1200x720!/format/webp/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.us-west-2.amazonaws.com%2F99%2F72%2Fdfa48b264422af0d7477eb671739%2Fescudo-colombia.jpg");
+}
+
+.buscador {
+    
+    background-color: #241d8356;
+    width: 300px;
+    height: 50px;
+    justify-content: right;
+
+}
+
+.side-bar { 
+    background-color: #8d99ae;
+    width: 300px;
+    height: 500px;
+}
+.content {
+    background-color: #1c167456;
+    height: 500px;
+    width: 1000px;
+    background-size: 1200px;
+    background-position: center;
+    background-image: url("https://i.pinimg.com/originals/b3/86/8d/b3868d7dd6f3e395f5620b9c018392be.jpg")
+
+    
+}
+.main {
+    height: 500px;
+    display: flex;
+    background-color: #1b0fcc56;
+    grid-template-columns: repeat(2,1fr);   
+    width: 1300px;
+    margin: 10px;
+    gap: 10px;
+}
+.footer {
+    display: flex;
+    background-color: #221a9156;
+    grid-template-columns: repeat(3,1fr);
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.footer-1, .footer-2, .footer-3 {
+    background-color: #221b8a56;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
