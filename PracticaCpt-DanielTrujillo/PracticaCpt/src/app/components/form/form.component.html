@@ -1,0 +1,39 @@
+<div class="field">
+  <h2 class="form-title"><strong>Formulario de Solicitud de Vacaciones</strong></h2>
+  <br>
+  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+    <div class="contenedor1" formGroupName="nombreCompleto">
+      <div class="p-field campo">
+        <label for="nombre"><strong>Nombre</strong></label>
+        <input id="nombre" type="text" pInputText formControlName="nombre" placeholder="Nombre" />
+        <small *ngIf="registroForm.get('nombreCompleto.nombre')?.touched && registroForm.get('nombreCompleto.nombre')?.invalid" class="p-error">
+          El nombre es obligatorio
+        </small>
+      </div>
+      <div class="p-field campo" >
+        <br>
+        <input id="apellido" type="text" pInputText formControlName="apellido" placeholder="Apellido" />
+        <small *ngIf="registroForm.get('nombreCompleto.apellido')?.touched && registroForm.get('nombreCompleto.apellido')?.invalid" class="p-error">
+          El apellido es obligatorio
+        </small>
+      </div>
+    </div>
+
+    <br>
+    <div class="p-field campo">
+      <label for="email"><strong>Correo Electrónico</strong></label>
+      <input id="email" type="email" pInputText formControlName="email" placeholder="Correo Electrónico" />
+      <small *ngIf="registroForm.controls['email'].touched && registroForm.controls['email'].invalid" class="p-error">
+        Correo electrónico no válido
+      </small>
+    </div>
+    <br>
+    <div class="p-field campo">
+      <label for="telefono"><strong>Teléfono</strong></label>
+      <input id="telefono" type="tel" pInputText formControlName="telefono" placeholder="Teléfono" />
+      <small *ngIf="registroForm.controls['telefono'].touched && registroForm.controls['telefono'].invalid" class="p-error">
+        El teléfono es obligatorio
+      </small>
+    </div>
+  </form>
+</div>
