@@ -1,0 +1,47 @@
+<div class="field">
+  <h2 class="form-title"><strong>Formulario de Solicitud de Vacaciones</strong></h2>
+  <br>
+  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+    <div class="contenedor1" formGroupName="nombreCompleto">
+      <div class="p-field campo">
+        <label for="nombre"><strong>Nombre</strong></label>
+        <input id="nombre" type="text" pInputText formControlName="nombre" placeholder="Nombre" style="width: 150%" />
+        <small *ngIf="registroForm.get('nombreCompleto.nombre')?.touched && registroForm.get('nombreCompleto.nombre')?.invalid" class="p-error">
+          El nombre es obligatorio
+        </small>
+      </div>
+      <div class="p-field campo" >
+        <br>
+        <input id="apellido" type="text" pInputText formControlName="apellido" placeholder="Apellido" style="width: 147%"/>
+        <small *ngIf="registroForm.get('nombreCompleto.apellido')?.touched && registroForm.get('nombreCompleto.apellido')?.invalid" class="p-error">
+          El apellido es obligatorio
+        </small>
+      </div>
+    </div>
+
+    <br>
+    <div class="p-field campo email-container">
+      <label for="email"><strong>Correo Electrónico</strong></label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-envelope"></i>
+        <input id="email" type="email" pInputText formControlName="email" placeholder="" class="w-full"/>
+      </span>
+      <small *ngIf="registroForm.controls['email'].touched && registroForm.controls['email'].invalid" class="p-error">
+        Correo electrónico no válido
+      </small>
+    </div>
+    
+    
+    <br>
+    <div class="p-field campo telefono-container">
+      <label for="telefono"><strong>Teléfono</strong></label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-phone"></i>
+        <input id="telefono" type="tel" pInputText formControlName="telefono" placeholder="" class="w-full"/>
+      </span>
+      <small *ngIf="registroForm.controls['telefono'].touched && registroForm.controls['telefono'].invalid" class="p-error">
+        El teléfono es obligatorio
+      </small>
+    </div>
+  </form>
+</div>
