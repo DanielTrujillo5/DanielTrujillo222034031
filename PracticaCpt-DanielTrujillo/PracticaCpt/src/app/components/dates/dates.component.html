@@ -1,1 +1,42 @@
-<p>dates works!</p>
+<div class="p-fluid">
+    <p><strong>Detalles de la licencia</strong></p>
+    <div class="card">
+        <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
+    </div>
+    <br>
+    <form [formGroup]="otherForm" (ngSubmit)="onSubmit()">
+        <div class="p-field">
+        <label for="birthdate">Fecha de inicio</label>
+        <p-calendar id="birthdate" formControlName="birthdate"></p-calendar>
+        <div *ngIf="otherForm.controls['birthdate'].invalid && otherForm.controls['birthdate'].touched" class="error">
+          La fecha de inicio es requerida
+        </div>
+      </div>
+<br>
+      <div class="p-field">
+        <label for="birthdate">Fecha de finalizacion</label>
+        <p-calendar id="birthdate" formControlName="birthdate"></p-calendar>
+        <div *ngIf="otherForm.controls['birthdate'].invalid && otherForm.controls['birthdate'].touched" class="error">
+          La fecha de finalizacion es requerida
+        </div>
+      </div>
+      <br>
+      <p><strong>Notas</strong></p>
+      <br>
+      <div class="card flex ">
+        <p-floatLabel>
+            <textarea 
+                id="float-input" 
+                rows="5"
+                cols="30" 
+                pInputTextarea>
+            </textarea>
+            <label for="float-input">notas</label>
+        </p-floatLabel>
+    </div>
+<br>
+    </form>
+  </div>
+
+
+
