@@ -21,24 +21,24 @@ export class DatesComponent {
   text: string = ''; 
   otherForm: FormGroup;
 
-  cities: any[] = [{label: 'New York', value: 'NY'}, {label: 'London', value: 'LDN'}, {label: 'Paris', value: 'PRS'}];
   constructor(private fb: FormBuilder, private router: Router) {
     this.otherForm = this.fb.group({
-      name: ['', Validators.required],
-      birthdate: ['', Validators.required],
-      city: [null, Validators.required],
+      startDate: ['', Validators.required], 
+      endDate: ['', Validators.required],   
+      notas: [''],                            
     });
   }
 
   onSubmit() {
     if (this.otherForm.valid) {
-      console.log(this.otherForm.value);
-      this.router.navigate(['/login']); 
+      console.log('Datos de DatesComponent:', {
+        ...this.otherForm.value,
+        detallesLicencia: this.text, 
+      });
     } else {
-      console.log('Formulario no valido');
+      console.log('Formulario e');
+      this.otherForm.markAllAsTouched();
     }
   }
-
-
 }
-
+// detalles de la licencia aparece mas arriba

@@ -22,8 +22,16 @@ export class AppComponent {
 
   // Método para enviar todos los formularios
   onSubmitAll() {
+    const formData = {
+      form: this.formComponent ? this.formComponent.registroForm.value : null,
+      manager: this.managerComponent ? this.managerComponent.registroForm.value : null,
+      dates: this.datesComponent ? this.datesComponent.otherForm.value : null,
+    };
+    
     if (this.formComponent) this.formComponent.onSubmit();
     if (this.managerComponent) this.managerComponent.onSubmit();
     if (this.datesComponent) this.datesComponent.onSubmit();
-  }
+  
+    console.log('Datos de todos los formularios:', formData);
+  }  
 }

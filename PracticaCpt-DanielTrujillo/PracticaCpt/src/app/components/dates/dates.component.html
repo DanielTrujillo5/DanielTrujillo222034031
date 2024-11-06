@@ -6,36 +6,37 @@
     <br>
     <form [formGroup]="otherForm" (ngSubmit)="onSubmit()">
         <div class="p-field">
-        <label for="birthdate">Fecha de inicio</label>
-        <p-calendar id="birthdate" formControlName="birthdate"></p-calendar>
-        <div *ngIf="otherForm.controls['birthdate'].invalid && otherForm.controls['birthdate'].touched" class="error">
+        <label for="startDate">Fecha de inicio</label>
+        <p-calendar id="startDate" formControlName="startDate"></p-calendar>
+        <div *ngIf="otherForm.controls['startDate'].invalid && otherForm.controls['startDate'].touched" class="error">
           La fecha de inicio es requerida
         </div>
       </div>
 <br>
       <div class="p-field">
-        <label for="birthdate">Fecha de finalizacion</label>
-        <p-calendar id="birthdate" formControlName="birthdate"></p-calendar>
-        <div *ngIf="otherForm.controls['birthdate'].invalid && otherForm.controls['birthdate'].touched" class="error">
+        <label for="endDate">Fecha de finalizacion</label>
+        <p-calendar id="endDate" formControlName="endDate"></p-calendar>
+        <div *ngIf="otherForm.controls['endDate'].invalid && otherForm.controls['endDate'].touched" class="error">
           La fecha de finalizacion es requerida
         </div>
       </div>
       <br>
       <p><strong>Notas</strong></p>
       <br>
-      <div class="card flex " >
+      <div class="card flex">
         <p-floatLabel>
-            <textarea 
-                id="float-input" 
-                rows="5"
-                cols="30" 
-                pInputTextarea
-                style="width: 200%">
-                
-            </textarea>
-            <label for="float-input">notas</label>
+          <textarea
+            id="notas"
+            rows="5"
+            cols="30"
+            pInputTextarea
+            formControlName="notas"
+            style="width: 100%">
+          </textarea>
+          <label for="notas">notas</label>
         </p-floatLabel>
-    </div>
+      </div>
+      <br>
 <br>
     </form>
   </div>
