@@ -1,0 +1,6 @@
+@ApiFormulario_HostAddress = http://localhost:5155
+
+GET {{ApiFormulario_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|c:\\users\\daniel trujillo\\desktop\\computacion grafica\\repositorio\\danieltrujillo222034031\\practicacpt-danieltrujillo\\practicacpt\\apiformulario\\controllers\\formulariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|solutionrelative:controllers\\formulariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|c:\\users\\daniel trujillo\\desktop\\computacion grafica\\repositorio\\danieltrujillo222034031\\practicacpt-danieltrujillo\\practicacpt\\apiformulario\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|solutionrelative:formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|c:\\users\\daniel trujillo\\desktop\\computacion grafica\\repositorio\\danieltrujillo222034031\\practicacpt-danieltrujillo\\practicacpt\\apiformulario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA429415-99C9-4098-A410-C3E36448BCFD}|ApiFormulario.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T01:36:01.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormularioController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Controllers\\FormularioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FormularioController.cs",
+              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Controllers\\FormularioController.cs",
+              "RelativeToolTip": "Controllers\\FormularioController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T00:15:00.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Formulario.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Formulario.cs",
+              "RelativeDocumentMoniker": "Formulario.cs",
+              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\computacion grafica\\repositorio\\DanielTrujillo222034031\\PracticaCpt-DanielTrujillo\\PracticaCpt\\ApiFormulario\\Formulario.cs",
+              "RelativeToolTip": "Formulario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T00:14:22.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

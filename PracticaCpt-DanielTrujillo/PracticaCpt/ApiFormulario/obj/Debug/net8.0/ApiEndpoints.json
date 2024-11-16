@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ApiFormulario.Controllers.FormularioController",
+    "Method": "Register",
+    "RelativePath": "api/Formulario/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "ApiFormulario.Formulario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -5,6 +5,7 @@
 @import "primeflex/primeflex.css";
 @import "../node_modules/quill/dist/quill.core.css";
 @import "../node_modules/quill/dist/quill.snow.css";
+@import './styles.css';
 
 
 .contenedor1 {
