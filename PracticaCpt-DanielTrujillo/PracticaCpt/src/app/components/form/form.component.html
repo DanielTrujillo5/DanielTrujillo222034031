@@ -4,9 +4,9 @@
   <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
     <div class="contenedor1" formGroupName="nombreCompleto">
       <div class="p-field campo">
-        <label for="nombre"><strong>Nombre</strong></label>
-        <input id="nombre" type="text" pInputText formControlName="nombre" placeholder="Nombre" style="width: 150%" />
-        <small *ngIf="registroForm.get('nombreCompleto.nombre')?.touched && registroForm.get('nombreCompleto.nombre')?.invalid" class="p-error">
+        <label for="nombreU"><strong>Nombre</strong></label>
+        <input id="nombreU" type="text" pInputText formControlName="nombreU" placeholder="Nombre" style="width: 150%" />
+        <small *ngIf="registroForm.get('nombreCompleto.nombreU')?.touched && registroForm.get('nombreCompleto.nombreU')?.invalid" class="p-error">
           El nombre es obligatorio
         </small>
       </div>
@@ -20,17 +20,16 @@
     </div>
 
     <br>
-    <div class="p-field campo email-container">
-      <label for="email"><strong>Correo Electrónico</strong></label>
+    <div class="p-field campo correoU-container">
+      <label for="correoU"><strong>Correo Electrónico</strong></label>
       <span class="p-input-icon-left">
         <i class="pi pi-envelope"></i>
-        <input id="email" type="email" pInputText formControlName="email" placeholder="" class="w-full"/>
+        <input id="correoU" type="correoU" pInputText formControlName="correoU" placeholder="" class="w-full"/>
       </span>
-      <small *ngIf="registroForm.controls['email'].touched && registroForm.controls['email'].invalid" class="p-error">
+      <small *ngIf="registroForm.controls['correoU'].touched && registroForm.controls['correoU'].invalid" class="p-error">
         Correo electrónico no válido
       </small>
     </div>
-    
     
     <br>
     <div class="p-field campo telefono-container">

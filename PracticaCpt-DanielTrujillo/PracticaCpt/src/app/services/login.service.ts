@@ -18,7 +18,7 @@ export class LoginService {
   // como respuestas de peticiones HTTP, eventos del usuario - se controla con HttpClientModule
 
 
-  register(nombreU:string, apellido:string, nombreG:string,correoU:string, correoG:string, telefono:number, fechaI:Date, fechaF:Date, licencia:string, notas:string):Observable<any> {
+  register(nombreU:string, apellido:string, nombreG:string,correoU:string, correoG:string, telefono:number, fechaI:string, fechaF:string, licencia:string, notas:string):Observable<any> {
     
     return this.http.post(`${this.apiUrl}/register`,{nombreU, apellido, nombreG,correoU,correoG,telefono,fechaI,fechaF,licencia,notas});
   }

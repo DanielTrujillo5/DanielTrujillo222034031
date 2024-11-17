@@ -39,11 +39,19 @@ body{
   }
 
 
-  .email-container .p-input-icon-left input {
+  .correoG-container .p-input-icon-left input {
     padding-left: 2rem;
   }
   
-  .email-container .p-input-icon-left .pi-envelope {
+  .correoG-container .p-input-icon-left .pi-envelope {
+    left: 0.5rem; 
+    color: #888; 
+  }
+  .correoU-container .p-input-icon-left input {
+    padding-left: 2rem;
+  }
+  
+  .correoU-container .p-input-icon-left .pi-envelope {
     left: 0.5rem; 
     color: #888; 
   }
@@ -59,16 +67,16 @@ body{
 }
 
 
-.nombre-gerente-container .p-input-icon-left input {
+.nombreG-gerente-container .p-input-icon-left input {
   padding-left: 2rem; 
 }
 
-.nombre-gerente-container .p-input-icon-left .pi-user {
+.nombreG-gerente-container .p-input-icon-left .pi-user {
   left: 0.5rem; 
   color: #888;
 }
 
-.nombre-gerente-container .p-input-icon-left .icon-t {
+.nombreG-gerente-container .p-input-icon-left .icon-t {
   position: absolute;
   left: 0.5rem;
   font-weight: bold;
@@ -77,4 +85,21 @@ body{
   top: 50%;
   transform: translateY(-50%);
 }
+.nombreU-gerente-container .p-input-icon-left input {
+  padding-left: 2rem; 
+}
 
+.nombreU-gerente-container .p-input-icon-left .pi-user {
+  left: 0.5rem; 
+  color: #888;
+}
+
+.nombreU-gerente-container .p-input-icon-left .icon-t {
+  position: absolute;
+  left: 0.5rem;
+  font-weight: bold;
+  color: #888;
+  font-size: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

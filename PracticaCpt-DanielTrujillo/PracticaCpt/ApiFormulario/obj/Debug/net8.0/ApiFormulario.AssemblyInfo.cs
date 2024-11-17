@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiFormulario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1181235bfb85bdeeb5614f18e2db0cfc978522e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aff5a578ae99e425ea3750a7d27a637b37cc1ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiFormulario")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiFormulario")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

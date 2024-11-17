@@ -11,23 +11,21 @@ import { CommonModule } from '@angular/common';
 })
 export class ManagerComponent {
   registroForm: FormGroup;
-  //Arreglo de tipo clave valor
- 
+
   constructor(private fb: FormBuilder) {
      this.registroForm = this.fb.group({
        nombreCompleto: this.fb.group({
-         nombre: ['', Validators.required],
-         apellido: ['', Validators.required]
+         nombreG: ['', Validators.required],
        }),
-       email: ['', [Validators.required, Validators.email]],
+       correoG: ['', [Validators.required, Validators.email]],
      });
    }
- 
-   onSubmit() {
-     if (this.registroForm.valid) {
-       console.log('Formulario Enviado', this.registroForm.value);
-     } else {
-       this.registroForm.markAllAsTouched();
-     }
-   }
- }
+
+  onSubmit() {
+    if (this.registroForm.valid) {
+      console.log('Formulario Enviado', this.registroForm.value);
+    } else {
+      this.registroForm.markAllAsTouched();
+    }
+  }
+}

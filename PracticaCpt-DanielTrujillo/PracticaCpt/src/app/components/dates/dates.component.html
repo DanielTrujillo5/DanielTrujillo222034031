@@ -1,45 +1,49 @@
 <div class="p-fluid">
-    <p><strong>Detalles de la licencia</strong></p>
-    <div class="card">
-        <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
+  <p><strong>Detalles de la licencia</strong></p>
+  <div class="card">
+    <p-editor 
+      formControlName="licencia" 
+      [style]="{ height: '320px' }"
+      (onTextChange)="updateLicencia($event)">
+    </p-editor>
+    <div *ngIf="otherForm.get('licencia')?.touched && otherForm.get('licencia')?.invalid" class="error">
+      La licencia es requerida
+    </div>
+  </div>
+  <br>
+  <form [formGroup]="otherForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="fechaI">Fecha de inicio</label>
+      <p-calendar id="fechaI" formControlName="fechaI"></p-calendar>
+      <div *ngIf="otherForm.controls['fechaI'].invalid && otherForm.controls['fechaI'].touched" class="error">
+        La fecha de inicio es requerida
+      </div>
     </div>
     <br>
-    <form [formGroup]="otherForm" (ngSubmit)="onSubmit()">
-        <div class="p-field">
-        <label for="startDate">Fecha de inicio</label>
-        <p-calendar id="startDate" formControlName="startDate"></p-calendar>
-        <div *ngIf="otherForm.controls['startDate'].invalid && otherForm.controls['startDate'].touched" class="error">
-          La fecha de inicio es requerida
-        </div>
+    <div class="p-field">
+      <label for="fechaF">Fecha de finalización</label>
+      <p-calendar id="fechaF" formControlName="fechaF"></p-calendar>
+      <div *ngIf="otherForm.controls['fechaF'].invalid && otherForm.controls['fechaF'].touched" class="error">
+        La fecha de finalización es requerida
       </div>
-<br>
-      <div class="p-field">
-        <label for="endDate">Fecha de finalizacion</label>
-        <p-calendar id="endDate" formControlName="endDate"></p-calendar>
-        <div *ngIf="otherForm.controls['endDate'].invalid && otherForm.controls['endDate'].touched" class="error">
-          La fecha de finalizacion es requerida
-        </div>
-      </div>
-      <br>
-      <p><strong>Notas</strong></p>
-      <br>
-      <div class="card flex">
-        <p-floatLabel>
-          <textarea
-            id="notas"
-            rows="5"
-            cols="30"
-            pInputTextarea
-            formControlName="notas"
-            style="width: 100%">
-          </textarea>
-          <label for="notas">notas</label>
-        </p-floatLabel>
-      </div>
-      <br>
-<br>
-    </form>
-  </div>
-
-
-
+    </div>
+    <br>
+    <p><strong>Notas</strong></p>
+    <br>
+    <div class="card flex">
+      <p-floatLabel>
+        <textarea
+          id="notas"
+          rows="5"
+          cols="30"
+          pInputTextarea
+          formControlName="notas"
+          style="width: 100%">
+        </textarea>
+        <label for="notas">Notas</label>
+      </p-floatLabel>
+    </div>
+    <br>
+    <br>
+  </form>
+</div>

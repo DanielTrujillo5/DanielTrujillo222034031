@@ -1,32 +1,32 @@
 <br>
 <div class="field">
-    <br>
-    <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
-      <div formGroupName="nombreCompleto">
-        <div class="p-field campo nombre-gerente-container">
-          <label for="nombre"><strong>Nombre del gerente</strong></label>
-          <span class="p-input-icon-left">
-            <span class="icon-t">T</span> <!-- Letra T como icono -->
-            <input id="nombre" type="text" pInputText formControlName="nombre" placeholder="" class="w-full" />
-          </span>
-          <small *ngIf="registroForm.get('nombreCompleto.nombre')?.touched && registroForm.get('nombreCompleto.nombre')?.invalid" class="p-error">
-            El nombre es obligatorio
-          </small>
-        </div>
-      </div>
-
-      <br>
-      <div class="p-field campo email-container">
-        <label for="email"><strong>Correo Electrónico</strong></label>
+  <br>
+  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+    <div formGroupName="nombreCompleto">
+      <div class="p-field campo nombreG-gerente-container">
+        <label for="nombreG"><strong>Nombre del gerente</strong></label>
         <span class="p-input-icon-left">
-          <i class="pi pi-envelope"></i>
-          <input id="email" type="email" pInputText formControlName="email" placeholder="" class="w-full" />
+          <span class="icon-t">T</span>
+          <input id="nombreG" type="text" pInputText formControlName="nombreG" placeholder="" class="w-full" />
         </span>
-        <small *ngIf="registroForm.controls['email'].touched && registroForm.controls['email'].invalid" class="p-error">
-          Correo electrónico no válido
+        <small *ngIf="registroForm.get('nombreCompleto.nombreG')?.touched && registroForm.get('nombreCompleto.nombreG')?.invalid" class="p-error">
+          El nombre es obligatorio
         </small>
       </div>
+    </div>
 
-      <br>
-    </form>
+    <br>
+    <div class="p-field campo correoG-container">
+      <label for="correoG"><strong>Correo Electrónico</strong></label>
+      <span class="p-input-icon-left">
+        <i class="pi pi-envelope"></i>
+        <input id="correoG" type="email" pInputText formControlName="correoG" placeholder="" class="w-full" />
+      </span>
+      <small *ngIf="registroForm.controls['correoG'].touched && registroForm.controls['correoG'].invalid" class="p-error">
+        Correo electrónico no válido
+      </small>
+    </div>
+
+    <br>
+  </form>
 </div>

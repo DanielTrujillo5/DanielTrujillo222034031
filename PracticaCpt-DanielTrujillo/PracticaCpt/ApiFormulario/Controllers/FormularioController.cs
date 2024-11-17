@@ -20,21 +20,44 @@ namespace ApiFormulario.Controllers
         return BadRequest("Invalid user data.");
       }
 
-      using (var connection = new SqlConnection(_connectionString))
+      try
       {
-        var sql = "INSERT INTO Users (nombreU, apellido,nombreG, correoU, correoG,telefono,  fechaI, fechaF, licencia, notas) VALUES (@nombreU,@apellido, @nombreG, @correoU, @correoG, @telefono,@fechaI, @fechaF, @licencia, @notas)";
-        var rowsAffected = connection.Execute(sql, new { user.nombreU, user.apellido, user.nombreG,  user.correoU, user.correoG, user.telefono, user.fechaI, user.fechaF, user.licencia, user.notas });
+        using (var connection = new SqlConnection(_connectionString))
+        {
+          connection.Open();
+          var sql = "INSERT INTO Users (nombreU, apellido, nombreG, correoU, correoG, telefono, fechaI, fechaF, licencia, notas) " +
+                    "VALUES (@nombreU, @apellido, @nombreG, @correoU, @correoG, @telefono, @fechaI, @fechaF, @licencia, @notas)";
 
-        if (rowsAffected > 0)
-        {
-          return Ok("User registered successfully.");
-        }
-        else
-        {
-          return StatusCode(500, "An error occurred while registering the user.");
+          var rowsAffected = connection.Execute(sql, new
+          {
+            user.nombreU,
+            user.apellido,
+            user.nombreG,
+            user.correoU,
+            user.correoG,
+            user.telefono,
+            user.fechaI,
+            user.fechaF,
+            user.licencia,
+            user.notas
+          });
+
+          if (rowsAffected > 0)
+          {
+            return Ok("User registered successfully.");
+          }
+          else
+          {
+            return StatusCode(500, "An error occurred while registering the user.");
+          }
         }
       }
-
+      catch (Exception ex)
+      {
+        // Aquí estamos capturando cualquier excepción y devolviendo el error.
+        return StatusCode(500, $"An error occurred: {ex.Message}");
+      }
     }
+
   }
 }
